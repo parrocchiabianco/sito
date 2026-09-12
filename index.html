@@ -260,53 +260,36 @@
          FOGLIETTO SETTIMANALE
     ========================== -->
 
-			<section id="foglietto" class="section foglietto">
+			<div class="pdf-box">
 
-				<div class="section-title">
-
-					<p class="sottotitolo">
-						Comunicazioni
-					</p>
-
-					<h2>
-						Foglietto settimanale
-					</h2>
-
-					<p>
-						Consulta il foglietto della settimana
-						con gli appuntamenti e le comunicazioni
-						della parrocchia.
-					</p>
-
+				<div class="pdf-icon">
+					📄
 				</div>
 
+				<h3>
+					Foglietto della settimana
+				</h3>
 
-				<div class="pdf-box">
+				<p id="giorno-attuale"></p>
 
-					<div class="pdf-icon">
-						📄
-					</div>
+				<p>
+					Consulta direttamente il foglietto della settimana
+					con gli appuntamenti e le comunicazioni
+					della parrocchia.
+				</p>
 
-					<h3>
-						Foglietto della settimana
-					</h3>
+				<!-- Qui verrà visualizzato il PDF -->
+				<div id="pdf-container"></div>
 
-					<p>
-						Clicca sul pulsante per leggere
-						o scaricare il foglietto parrocchiale.
-					</p>
+				<a href="documenti/foglietto-settimanale.pdf?v=2"
+				   target="_blank"
+				   class="button">
 
-					<a href="documenti/foglietto-settimanale.pdf"
-					   target="_blank"
-					   class="button">
+					Apri il foglietto PDF
 
-						Apri il foglietto PDF
+				</a>
 
-					</a>
-
-				</div>
-
-			</section>
+			</div>
 
 
 
@@ -413,9 +396,10 @@
 
 		</footer>
 
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+		
 		<script src="script.js"></script>
-		```
+		
 
 	</body>
 

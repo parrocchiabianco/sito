@@ -497,6 +497,41 @@ nav {
     color: var(--testo-chiaro);
 }
 
+/* Visualizzatore del foglietto */
+
+#pdf-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.pdf-pagina {
+    position: relative;
+    margin-bottom: 25px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.pdf-pagina canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.pdf-testo {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* Evidenzia il giorno attuale */
+
+.pdf-giorno-oggi {
+    background: rgba(255, 213, 79, 0.55);
+    border: 3px solid #d6a63c;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
 
 /* =========================================================
    LA PARROCCHIA
