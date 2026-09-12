@@ -1,3 +1,38 @@
+/* =========================================================
+   PARROCCHIA BIANCIANCO
+   Stile completo del sito
+   ========================================================= */
+
+:root {
+    --blu: #174a7e;
+    --blu-scuro: #0d3157;
+    --blu-medio: #23679f;
+    --blu-chiaro: #eaf4ff;
+
+    --oro: #d6a63c;
+    --oro-chiaro: #f8e7b5;
+
+    --verde: #3c8c68;
+
+    --bianco: #ffffff;
+    --sfondo: #f7f9fc;
+
+    --testo: #263445;
+    --testo-chiaro: #64748b;
+
+    --bordo: #dce6f0;
+
+    --ombra: 0 10px 30px rgba(23, 74, 126, 0.12);
+    --ombra-forte: 0 18px 45px rgba(13, 49, 87, 0.18);
+
+    --raggio: 18px;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,126 +44,778 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--sfondo);
+    color: var(--testo);
     line-height: 1.6;
-    color: #222;
-    background: #fff;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 header {
     position: sticky;
     top: 0;
-    background: white;
-    border-bottom: 1px solid #ddd;
     z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid rgba(23, 74, 126, 0.08);
+
+    box-shadow: 0 4px 20px rgba(13, 49, 87, 0.08);
 }
 
 nav {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 1180px;
+    min-height: 76px;
+
+    margin: 0 auto;
+    padding: 0 25px;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #111;
+    color: var(--blu-scuro);
+    font-size: 1.35rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.logo::before {
+    content: "✝";
+    color: var(--oro);
+    margin-right: 9px;
 }
 
 .menu {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #333;
+    color: var(--testo);
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    padding: 10px 13px;
+    border-radius: 10px;
+
+    transition: 0.25s ease;
 }
 
+.menu a:hover {
+    background: var(--blu-chiaro);
+    color: var(--blu);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
 .hero {
-    min-height: 80vh;
+    min-height: 650px;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
     text-align: center;
-    padding: 40px 20px;
-    background: #f5f5f5;
+
+    padding: 100px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(13, 49, 87, 0.94),
+            rgba(23, 74, 126, 0.82)
+        ),
+        url("immagini/parrocchia.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--bianco);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.sottotitolo {
+    color: var(--oro);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
 }
 
 .hero h1 {
-    font-size: 56px;
-    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
+    line-height: 1.05;
+    margin-bottom: 25px;
 }
 
-.hero p {
-    font-size: 20px;
-    max-width: 600px;
-    margin-bottom: 30px;
+.hero p:not(.sottotitolo) {
+    max-width: 680px;
+    margin: 0 auto;
+
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
 }
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   PULSANTI
+   ========================================================= */
 
 .button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
     padding: 12px 24px;
-    background: #111;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
+
+    border-radius: 999px;
+
+    background: var(--oro);
+    color: var(--blu-scuro);
+
+    font-weight: 800;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
 }
 
-section:not(.hero) {
-    max-width: 1100px;
+.button:hover {
+    transform: translateY(-3px);
+    background: #e5b64c;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.button-light {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--bianco);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.button-light:hover {
+    background: var(--bianco);
+    color: var(--blu-scuro);
+}
+
+
+/* =========================================================
+   SEZIONI GENERALI
+   ========================================================= */
+
+.section {
+    width: 100%;
+    padding: 100px 25px;
+}
+
+.section-title {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.section-title h2 {
+    color: var(--blu-scuro);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+
+    margin-bottom: 15px;
+}
+
+.section-title > p:last-child {
+    color: var(--testo-chiaro);
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   ORARI DELLE MESSE
+   ========================================================= */
+
+#messe {
+    width: 100%;
+    background: var(--bianco);
+
+    padding: 100px 25px;
+}
+
+#messe .section-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#messe .section-title .sottotitolo {
+    color: var(--oro);
+}
+
+.messe-container {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+
+    justify-content: center;
+    align-items: stretch;
+}
+
+.messa-card {
+    min-height: 155px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background: var(--bianco);
+
+    border: 1px solid var(--bordo);
+    border-radius: var(--raggio);
+
+    box-shadow: var(--ombra);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.messa-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--ombra-forte);
+}
+
+.messa-card h3 {
+    color: var(--blu-scuro);
+
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.messa-card p {
+    color: var(--testo-chiaro);
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    margin: 2px 0;
+}
+
+
+/* DOMENICA */
+
+.messa-card.domenica {
+    background: linear-gradient(
+        135deg,
+        var(--blu-scuro),
+        var(--blu)
+    );
+
+    border: none;
+}
+
+.messa-card.domenica h3 {
+    color: var(--bianco);
+}
+
+.messa-card.domenica p {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* =========================================================
+   FOGLIETTO SETTIMANALE
+   ========================================================= */
+
+#foglietto {
+    width: 100%;
+    background: var(--blu-chiaro);
+
+    padding: 100px 25px;
+}
+
+#foglietto .section-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pdf-box {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 55px 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: var(--bianco);
+
+    border: 1px solid rgba(23, 74, 126, 0.08);
+    border-radius: 24px;
+
+    box-shadow: var(--ombra-forte);
+}
+
+.pdf-icon {
+    width: 75px;
+    height: 75px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background: var(--oro-chiaro);
+
+    font-size: 2.3rem;
+}
+
+.pdf-box h3 {
+    color: var(--blu-scuro);
+
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.pdf-box p {
+    max-width: 550px;
+
+    margin-bottom: 28px;
+
+    color: var(--testo-chiaro);
+}
+
+
+/* =========================================================
+   LA PARROCCHIA
+   ========================================================= */
+
+#parrocchia {
+    background: var(--bianco);
+}
+
+.parrocchia-content {
+    width: 100%;
+ 
+
     margin: auto;
-    padding: 100px 20px;
+
+    display: grid;
+
+
+    gap: 55px;
+
+    align-items: center;
 }
 
-section h2 {
-    font-size: 36px;
+.parrocchia-image {
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    box-shadow: var(--ombra-forte);
+}
+
+.parrocchia-image img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.parrocchia-image:hover img {
+    transform: scale(1.04);
+}
+
+.parrocchia-text {
+    text-align: left;
+    
+}
+
+.parrocchia-text p {
+    color: var(--testo);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  
+}
+
+.parrocchia-text h2 {
+    color: var(--blu-scuro);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.15;
+
     margin-bottom: 20px;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 40px;
+
+/* =========================================================
+   CONTATTI
+   ========================================================= */
+
+#contatti {
+    width: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #eaf4ff,
+        #f7fbff
+    );
+
+    padding: 100px 25px;
 }
 
-.card {
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
+#contatti .section-title {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
 }
+
+#contatti .section-title h2 {
+    color: var(--blu-scuro);
+}
+
+#contatti .section-title > p:last-child {
+    color: var(--testo);
+}
+
+.contatti-box {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.contatti-box > div {
+    background: var(--bianco);
+
+    padding: 35px;
+
+    border-radius: var(--raggio);
+
+    border: 1px solid var(--bordo);
+
+    box-shadow: var(--ombra);
+}
+
+.contatti-box h3 {
+    color: var(--blu-scuro);
+
+    font-size: 1.35rem;
+
+    margin-bottom: 18px;
+}
+
+.contatti-box p {
+    color: var(--testo);
+
+    font-size: 1rem;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
-    padding: 30px;
-    text-align: center;
-    background: #111;
-    color: white;
+    width: 100%;
+
+    background: var(--blu-scuro);
+
+    color: var(--bianco);
+
+    padding: 55px 25px;
 }
 
-@media (max-width: 700px) {
+.footer-content {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.copyright {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
 
     nav {
+        min-height: auto;
+
+        padding-top: 18px;
+        padding-bottom: 18px;
+
         flex-direction: column;
         gap: 15px;
     }
 
     .menu {
-        gap: 12px;
         flex-wrap: wrap;
-        justify-content: center;
+    }
+
+    .messe-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 750px;
+    }
+
+    .parrocchia-content {
+        grid-template-columns: 1fr;
+
+        max-width: 750px;
+
+        gap: 40px;
+    }
+
+    .parrocchia-text {
+        text-align: center;
+    }
+
+    .parrocchia-text .sottotitolo {
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - TELEFONO
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .section,
+    #messe,
+    #foglietto,
+    #contatti {
+        padding: 75px 18px;
+    }
+
+    .hero {
+        min-height: 600px;
+
+        padding: 80px 18px;
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 2.7rem;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
+    .hero p:not(.sottotitolo) {
+        font-size: 1.05rem;
     }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .messe-container {
+        grid-template-columns: 1fr;
+
+        max-width: 450px;
+
+        gap: 18px;
+    }
+
+    .messa-card {
+        min-height: 135px;
+    }
+
+    .pdf-box {
+        padding: 40px 22px;
+    }
+
+    .pdf-box .button {
+        width: 100%;
+    }
+
+    .parrocchia-image img {
+        height: 300px;
+    }
+
+    .contatti-box {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+    .contatti-box > div {
+        padding: 28px 22px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - TELEFONI PICCOLI
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
+    .menu {
+        gap: 3px;
+    }
+
+    .menu a {
+        padding: 8px 7px;
+        font-size: 0.82rem;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .sottotitolo {
+        font-size: 0.8rem;
+    }
+
+    .pdf-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 2rem;
+    }
+
+    .parrocchia-image img {
+        height: 250px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITÀ
+   ========================================================= */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--oro);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   SELEZIONE DEL TESTO
+   ========================================================= */
+
+::selection {
+    background: var(--oro);
+    color: var(--blu-scuro);
 }
