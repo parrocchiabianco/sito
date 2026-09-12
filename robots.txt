@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parrocchiabianco-wq.github.io/sito/sitemap.xml
