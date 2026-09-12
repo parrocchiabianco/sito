@@ -312,6 +312,9 @@ nav {
 }
 
 .messa-card {
+
+    position: relative;
+
     min-height: 155px;
 
     display: flex;
@@ -338,6 +341,50 @@ nav {
 .messa-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--ombra-forte);
+}
+
+/* Evidenzia la Messa del giorno */
+
+.messa-card.oggi {
+    border: 3px solid var(--oro);
+
+    background: linear-gradient(
+        135deg,
+        #fffdf5,
+        #fff8df
+    );
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(214, 166, 60, 0.25);
+}
+
+/* Etichetta OGGI */
+
+.messa-card.oggi::before {
+    content: "OGGI";
+
+    position: absolute;
+
+    top: -13px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 5px 14px;
+
+    background: var(--oro);
+    color: var(--blu-scuro);
+
+    border-radius: 999px;
+
+    font-size: 0.75rem;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    box-shadow: 0 5px 15px rgba(214, 166, 60, 0.3);
 }
 
 .messa-card h3 {
