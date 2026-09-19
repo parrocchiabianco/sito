@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 wrapper.className = "pdf-pagina";
 
+                wrapper.style.position = "relative";
                 wrapper.style.width = viewport.width + "px";
                 wrapper.style.height = viewport.height + "px";
 
@@ -137,6 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             const altezza =
                                 Math.abs(trasformazione[3]);
 
+                            const larghezza =
+                                Math.abs(trasformazione[0]);
+
 
                             evidenziazione.style.position = "absolute";
 
@@ -146,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 (y - altezza) + "px";
 
                             evidenziazione.style.width =
-                                (elemento.width * scala) + "px";
+                                larghezza + "px";
 
                             evidenziazione.style.height =
                                 (altezza + 8) + "px";
