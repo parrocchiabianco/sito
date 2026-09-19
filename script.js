@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================
-    // 2. MOSTRA SOLO IL RIQUADRO DEL GIORNO
+    // 2. CARICA FOGLIETTO DA JSON
     // =====================================
 
     const contenitorePDF = document.getElementById("pdf-container");
@@ -48,167 +48,65 @@ document.addEventListener("DOMContentLoaded", function () {
     testoGiorno.textContent = "Oggi è " + nomeGiorno;
 
 
-    // Percorso del PDF
-    const url = "documenti/foglietto-settimanale.pdf?v=2";
+    // Carica il JSON del foglietto
+    fetch("documenti/foglietto_parrocchiale.json")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (dati) {
 
+            console.log("JSON caricato:", dati);
 
-    // Configurazione PDF.js
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+            // Trova il giorno corrente nel JSON
+            let giornoFound = null;
 
+            dati.giorni.forEach(function (giorno) {
+                const parole = giorno.data.split(" ");
+                const nomeDel = parole[0];
 
-    // Carica il PDF
-    pdfjsLib.getDocument(url).promise.then(function (pdf) {
-
-        // Leggiamo solo la prima pagina (foglietto settimanale)
-        pdf.getPage(1).then(function (pagina) {
-
-            const scala = 1.5;
-
-            const viewport = pagina.getViewport({
-                scale: scala
+                if (nomeDel === nomeGiorno) {
+                    giornoFound = giorno;
+                    console.log("Giorno trovato:", giorno);
+                }
             });
 
-            // Render della pagina intera
-            const canvas = document.createElement("canvas");
-            canvas.width = viewport.width;
-            canvas.height = viewport.height;
+            if (!giornoFound) {
+                contenitorePDF.innerHTML = "<div class='pdf-giorno-info errore'><p>Giorno non trovato nel foglietto.</p></div>";
+                return;
+            }
 
-            const contesto = canvas.getContext("2d");
+            let htmlContenuto = "<div class='pdf-giorno-info'>";
+            htmlContenuto += "<h4>" + giornoFound.data.toUpperCase() + "</h4>";
+            htmlContenuto += "<p class='ricorrenza'>" + giornoFound.ricorrenza + "</p>";
+            htmlContenuto += "<div class='pdf-giorno-contenuto'>";
 
-            pagina.render({
-                canvasContext: contesto,
-                viewport: viewport
-            }).promise.then(function () {
+            if (giornoFound.celebrazioni && giornoFound.celebrazioni.length > 0) {
+                giornoFound.celebrazioni.forEach(function (celebrazione) {
+                    htmlContenuto += "<div class='celebrazione'>";
+                    htmlContenuto += "<strong>" + celebrazione.ora + "</strong> - " + celebrazione.descrizione;
 
-                // Usa OCR per leggere il testo dal PDF
-                console.log("Inizio OCR per il giorno:", nomeGiorno);
-
-                Tesseract.recognize(
-                    canvas,
-                    "ita"
-                ).then(function (result) {
-
-                    const testoOCR = result.data.text;
-                    console.log("Testo OCR completo:\n", testoOCR);
-
-                    // Separa il testo per righe
-                    const righe = testoOCR.split("\n").map(r => r.trim()).filter(r => r.length > 0);
-
-                    console.log("Tutte le righe estratte:");
-                    righe.forEach(function(r, idx) {
-                        console.log(idx + ": " + r);
-                    });
-
-                    // Trova gli indici di TUTTI i giorni
-                    let indiciGiorni = {};
-                    giorni.forEach(function(giorno) {
-                        indiciGiorni[giorno] = [];
-                        righe.forEach(function(riga, idx) {
-                            if (riga.toUpperCase().includes(giorno.toUpperCase())) {
-                                indiciGiorni[giorno].push(idx);
-                            }
-                        });
-                    });
-
-                    console.log("Indici di tutti i giorni:", indiciGiorni);
-
-                    // Trova l'indice del giorno attuale che ha senso (il più grande tra i match)
-                    let indiceGiorno = -1;
-                    if (indiciGiorni[nomeGiorno].length > 0) {
-                        indiceGiorno = indiciGiorni[nomeGiorno][indiciGiorni[nomeGiorno].length - 1];
-                        console.log("✓ Usato l'ultimo match per " + nomeGiorno + " all'indice:", indiceGiorno);
+                    if (celebrazione.luogo) {
+                        htmlContenuto += " (" + celebrazione.luogo + ")";
                     }
 
-                    // Se non trovato
-                    if (indiceGiorno === -1) {
-                        contenitorePDF.innerHTML =
-                            "<div class='pdf-giorno-info errore'>" +
-                            "<p>Giorno '" + nomeGiorno + "' non trovato nel foglietto.</p>" +
-                            "</div>";
-                        return;
+                    if (celebrazione.intenzioni) {
+                        htmlContenuto += "<br><em>Intenzioni: " + celebrazione.intenzioni + "</em>";
                     }
 
-                    // Trova il prossimo giorno dopo quello attuale
-                    // Ordine giorni: Domenica(0), Lunedì(1), Martedì(2), Mercoledì(3), Giovedì(4), Venerdì(5), Sabato(6)
-                    let giornoSuccessivo = "";
-                    let indiceGiornoSuccessivo = righe.length; // Default: fine documento
-
-                    for (let i = indiceGiorno + 1; i < righe.length; i++) {
-                        let trovato = false;
-                        giorni.forEach(function(giorno) {
-                            if (giorno !== nomeGiorno && righe[i].toUpperCase().includes(giorno.toUpperCase())) {
-                                giornoSuccessivo = giorno;
-                                indiceGiornoSuccessivo = i;
-                                trovato = true;
-                            }
-                        });
-                        if (trovato) break;
-                    }
-
-                    console.log("Giorno successivo:", giornoSuccessivo, "all'indice:", indiceGiornoSuccessivo);
-
-                    // Estrai solo il contenuto tra il giorno attuale e il prossimo
-                    let contenutoGiorno = [];
-                    for (let i = indiceGiorno; i < indiceGiornoSuccessivo; i++) {
-                        contenutoGiorno.push(righe[i]);
-                    }
-
-                    console.log("Contenuto grezzo del giorno (prima di pulire):", contenutoGiorno);
-
-                    // Funzione per pulire il testo
-                    function pulisciTesto(testo) {
-                        // Mantiene solo lettere, numeri, spazi, e punti
-                        return testo.replace(/[^\w\s\.àèéìòùÀÈÉÌÒÙáéíóúÁÉÍÓÚ]/g, '').trim();
-                    }
-
-                    // Crea il box HTML con le informazioni del giorno
-                    let htmlContenuto = "<div class='pdf-giorno-info'>";
-                    htmlContenuto += "<h4>" + nomeGiorno.toUpperCase() + "</h4>";
-                    htmlContenuto += "<div class='pdf-giorno-contenuto'>";
-
-                    // Mostra le righe del giorno
-                    contenutoGiorno.forEach(function (riga, idx) {
-                        if (idx === 0) {
-                            // Prima riga è il titolo del giorno, skip
-                            return;
-                        }
-
-                        const testoPulito = pulisciTesto(riga);
-                        if (testoPulito.length > 0) {
-                            htmlContenuto += "<p>" + testoPulito + "</p>";
-                        }
-                    });
-
-                    htmlContenuto += "</div></div>";
-
-                    // Mostra il contenuto
-                    contenitorePDF.innerHTML = htmlContenuto;
-
-                    console.log("Contenuto finale visualizzato:", contenutoGiorno);
-
-                }).catch(function (ocrError) {
-                    console.error("Errore OCR:", ocrError);
-                    contenitorePDF.innerHTML =
-                        "<div class='pdf-giorno-info errore'>" +
-                        "<p>Errore nel riconoscimento del testo dal PDF.</p>" +
-                        "</div>";
+                    htmlContenuto += "</div>";
                 });
+            }
 
-            });
+            htmlContenuto += "</div>";
+            htmlContenuto += "<p class='contatti-footer'>Telefono: " + dati.telefono + "</p>";
+            htmlContenuto += "</div>";
 
+            contenitorePDF.innerHTML = htmlContenuto;
+
+        })
+        .catch(function (errore) {
+            console.error("Errore:", errore);
+            contenitorePDF.innerHTML = "<div class='pdf-giorno-info errore'><p>Impossibile caricare il foglietto.</p></div>";
         });
-
-    }).catch(function (errore) {
-
-        console.error(
-            "Errore nel caricamento del PDF:",
-            errore
-        );
-
-        contenitorePDF.innerHTML =
-            "<p>Impossibile caricare il foglietto settimanale.</p>";
-
-    });
 
 });

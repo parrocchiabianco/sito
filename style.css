@@ -546,7 +546,7 @@ nav {
 }
 
 .pdf-giorno-info h4 {
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     color: #333;
     font-size: 1.3em;
     text-transform: uppercase;
@@ -565,23 +565,38 @@ nav {
     border-bottom-color: #c41e3a;
 }
 
+.ricorrenza {
+    color: #666;
+    font-style: italic;
+    margin: 5px 0 15px 0;
+}
+
 .pdf-giorno-contenuto {
     line-height: 1.8;
     color: #555;
     font-size: 0.95em;
 }
 
-.pdf-giorno-contenuto p {
-    margin: 12px 0;
-    padding: 8px 12px;
-    border-left: 2px solid transparent;
+.celebrazione {
+    margin: 15px 0;
+    padding: 12px;
+    background: rgba(214, 166, 60, 0.05);
+    border-left: 3px solid #d6a63c;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
-.pdf-giorno-contenuto p:hover {
-    background: rgba(214, 166, 60, 0.1);
-    border-left-color: #d6a63c;
-    padding-left: 20px;
+.celebrazione:hover {
+    background: rgba(214, 166, 60, 0.15);
+    transform: translateX(5px);
+}
+
+.contatti-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #999;
 }
 
 /* Crop del riquadro del giorno nel PDF */
