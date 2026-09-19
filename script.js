@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 viewport: viewport
             }).promise.then(function () {
 
-                // Usa OCR per leggere il testo e le coordinate
+                // Usa OCR per leggere il testo dal PDF
                 console.log("Inizio OCR per il giorno:", nomeGiorno);
 
                 Tesseract.recognize(
@@ -90,86 +90,76 @@ document.addEventListener("DOMContentLoaded", function () {
                 ).then(function (result) {
 
                     const testoOCR = result.data.text;
-                    const words = result.data.words;
+                    console.log("Testo OCR completo:\n", testoOCR);
 
-                    console.log("Testo OCR trovato:", testoOCR);
-                    console.log("Numero di parole:", words.length);
+                    // Separa il testo per righe
+                    const righe = testoOCR.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
-                    // Cerca la parola che contiene il nome del giorno
-                    let giornoBox = null;
-
-                    words.forEach(function (word) {
-                        const testoWord = word.text.trim().toUpperCase();
-                        const giornoUpper = nomeGiorno.toUpperCase();
-
-                        // Stampa per debug
-                        console.log("Parola:", testoWord, "Cerco:", giornoUpper);
-
-                        if (testoWord.includes(giornoUpper) || giornoUpper.includes(testoWord)) {
-                            console.log("✓ Trovato giorno:", testoWord, "Bounding box:", word.bbox);
-                            giornoBox = word.bbox;
+                    // Trova l'indice della riga con il giorno
+                    let indiceGiorno = -1;
+                    righe.forEach(function (riga, idx) {
+                        if (riga.toUpperCase().includes(nomeGiorno.toUpperCase())) {
+                            indiceGiorno = idx;
+                            console.log("✓ Trovato giorno all'indice:", idx, "Riga:", riga);
                         }
                     });
 
-                    // Se non trovato il giorno, errore
-                    if (!giornoBox) {
+                    // Se non trovato
+                    if (indiceGiorno === -1) {
                         contenitorePDF.innerHTML =
-                            "<p>Giorno '" + nomeGiorno + "' non trovato nel foglietto.</p>";
+                            "<div class='pdf-giorno-info errore'>" +
+                            "<p>Giorno '" + nomeGiorno + "' non trovato nel foglietto.</p>" +
+                            "</div>";
                         return;
                     }
 
-                    // Usa il bounding box per calcolare il crop
-                    // Proviamo a estendere il box verso il basso per catturare il contenuto del giorno
-                    const margine = 30;
+                    // Estrai le righe del giorno (dal giorno corrente fino al prossimo giorno)
+                    let contenutoGiorno = [];
 
-                    // Il giorno è nella parte superiore del suo riquadro
-                    // Estendiamo verso il basso per catturare il contenuto
-                    let recX = Math.max(0, giornoBox.x0 - margine);
-                    let recY = Math.max(0, giornoBox.y0 - margine);
-                    let recWidth = (giornoBox.x1 - giornoBox.x0) + (margine * 2);
+                    // Inizia dalla riga del giorno
+                    for (let i = indiceGiorno; i < righe.length; i++) {
+                        const riga = righe[i];
 
-                    // Stima dell'altezza: dalla parola del giorno fino al giorno successivo
-                    // Approssimiamo con l'altezza della pagina / 7 * 1.5
-                    let recHeight = ((viewport.height / 7) * 1.2);
+                        // Se trovo un altro giorno della settimana, stop
+                        let trovatoAltroGiorno = false;
+                        giorni.forEach(function (g) {
+                            if (i !== indiceGiorno && riga.toUpperCase().includes(g.toUpperCase())) {
+                                trovatoAltroGiorno = true;
+                            }
+                        });
 
-                    // Assicuriamoci che il crop non superi i limiti della pagina
-                    if (recY + recHeight > viewport.height) {
-                        recHeight = viewport.height - recY - 10;
+                        if (trovatoAltroGiorno) break;
+
+                        contenutoGiorno.push(riga);
                     }
 
-                    console.log("Crop calcolato:", { x: recX, y: recY, w: recWidth, h: recHeight });
+                    // Crea il box HTML con le informazioni del giorno
+                    let htmlContenuto = "<div class='pdf-giorno-info'>";
+                    htmlContenuto += "<h4>" + nomeGiorno.toUpperCase() + "</h4>";
+                    htmlContenuto += "<div class='pdf-giorno-contenuto'>";
 
-                    // Crea un nuovo canvas per il crop
-                    const cropCanvas = document.createElement("canvas");
-                    cropCanvas.width = recWidth;
-                    cropCanvas.height = recHeight;
+                    // Mostra le righe del giorno
+                    contenutoGiorno.forEach(function (riga, idx) {
+                        if (idx === 0) {
+                            // Prima riga è il titolo del giorno, skip
+                            return;
+                        }
+                        htmlContenuto += "<p>" + riga + "</p>";
+                    });
 
-                    const cropContesto = cropCanvas.getContext("2d");
+                    htmlContenuto += "</div></div>";
 
-                    // Copia la porzione dal canvas originale
-                    cropContesto.drawImage(
-                        canvas,
-                        recX,
-                        recY,
-                        recWidth,
-                        recHeight,
-                        0,
-                        0,
-                        recWidth,
-                        recHeight
-                    );
+                    // Mostra il contenuto
+                    contenitorePDF.innerHTML = htmlContenuto;
 
-                    // Mostra il crop nel contenitore
-                    const wrapper = document.createElement("div");
-                    wrapper.className = "pdf-giorno-crop";
-                    wrapper.appendChild(cropCanvas);
-
-                    contenitorePDF.appendChild(wrapper);
+                    console.log("Contenuto estratto:", contenutoGiorno);
 
                 }).catch(function (ocrError) {
                     console.error("Errore OCR:", ocrError);
                     contenitorePDF.innerHTML =
-                        "<p>Errore nel riconoscimento del testo dal PDF.</p>";
+                        "<div class='pdf-giorno-info errore'>" +
+                        "<p>Errore nel riconoscimento del testo dal PDF.</p>" +
+                        "</div>";
                 });
 
             });
