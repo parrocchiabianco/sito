@@ -45,8 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const nomeGiorno = giorni[oggi];
 
-    testoGiorno.textContent = "Oggi è " + nomeGiorno;
-
 
     // Carica il JSON del foglietto
     fetch("documenti/foglietto_parrocchiale.json")
@@ -97,8 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
 
-            htmlContenuto += "</div>";
-            htmlContenuto += "<p class='contatti-footer'>Telefono: " + dati.telefono + "</p>";
             htmlContenuto += "</div>";
 
             contenitorePDF.innerHTML = htmlContenuto;
