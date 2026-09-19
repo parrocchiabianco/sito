@@ -95,12 +95,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Separa il testo per righe
                     const righe = testoOCR.split("\n").map(r => r.trim()).filter(r => r.length > 0);
 
-                    // Trova l'indice della riga con il giorno
+                    console.log("Tutte le righe estratte:");
+                    righe.forEach(function(r, idx) {
+                        console.log(idx + ": " + r);
+                    });
+
+                    // Trova l'ultimo indice della riga con il giorno (per evitare intestazioni)
                     let indiceGiorno = -1;
                     righe.forEach(function (riga, idx) {
                         if (riga.toUpperCase().includes(nomeGiorno.toUpperCase())) {
                             indiceGiorno = idx;
-                            console.log("✓ Trovato giorno all'indice:", idx, "Riga:", riga);
+                            console.log("Trovato giorno all'indice:", idx, "Riga:", riga);
                         }
                     });
 
@@ -112,6 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             "</div>";
                         return;
                     }
+
+                    console.log("✓✓✓ Indice finale del giorno:", indiceGiorno);
 
                     // Estrai le righe del giorno (dal giorno corrente fino al prossimo giorno)
                     let contenutoGiorno = [];
@@ -128,9 +135,20 @@ document.addEventListener("DOMContentLoaded", function () {
                             }
                         });
 
-                        if (trovatoAltroGiorno) break;
+                        if (trovatoAltroGiorno) {
+                            console.log("Trovato altro giorno all'indice " + i + ", stop");
+                            break;
+                        }
 
                         contenutoGiorno.push(riga);
+                    }
+
+                    console.log("Contenuto grezzo del giorno:", contenutoGiorno);
+
+                    // Funzione per pulire il testo
+                    function pulisciTesto(testo) {
+                        // Mantiene solo lettere, numeri, spazi, e punti
+                        return testo.replace(/[^\w\s\.àèéìòùÀÈÉÌÒÙáéíóúÁÉÍÓÚ]/g, '').trim();
                     }
 
                     // Crea il box HTML con le informazioni del giorno
@@ -144,7 +162,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             // Prima riga è il titolo del giorno, skip
                             return;
                         }
-                        htmlContenuto += "<p>" + riga + "</p>";
+
+                        const testoPulito = pulisciTesto(riga);
+                        if (testoPulito.length > 0) {
+                            htmlContenuto += "<p>" + testoPulito + "</p>";
+                        }
                     });
 
                     htmlContenuto += "</div></div>";
@@ -152,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Mostra il contenuto
                     contenitorePDF.innerHTML = htmlContenuto;
 
-                    console.log("Contenuto estratto:", contenutoGiorno);
+                    console.log("Contenuto finale visualizzato:", contenutoGiorno);
 
                 }).catch(function (ocrError) {
                     console.error("Errore OCR:", ocrError);
