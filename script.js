@@ -75,19 +75,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 let minX = null, minY = null, maxX = null, maxY = null;
                 let trovatoGiorno = false;
 
+                // DEBUG: Stampa tutti i testi trovati nel PDF
+                console.log("Cerco il giorno:", nomeGiorno);
+                console.log("Testi trovati nel PDF:");
+                contenuto.items.forEach(function (el) {
+                    console.log("  '" + el.str.trim() + "'");
+                });
+
                 // Prima passa: trovare il giorno e calcolare il bounding box
                 contenuto.items.forEach(function (elemento) {
 
-                    const testo = elemento.str.trim();
+                    const testo = elemento.str.trim().toUpperCase();
+                    const giornoUpper = nomeGiorno.toUpperCase();
 
-                    // Cerca il nome del giorno attuale
+                    // Cerca il nome del giorno attuale (exact match o include)
                     if (
-                        testo.toLowerCase().includes(
-                            nomeGiorno.toLowerCase()
-                        )
+                        testo === giornoUpper || 
+                        testo.includes(giornoUpper)
                     ) {
 
                         trovatoGiorno = true;
+                        console.log("✓ Trovato giorno:", testo);
 
                         const trasformazione =
                             pdfjsLib.Util.transform(
