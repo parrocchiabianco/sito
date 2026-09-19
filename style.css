@@ -533,6 +533,27 @@ nav {
     box-sizing: border-box;
 }
 
+/* Crop del riquadro del giorno nel PDF */
+
+.pdf-giorno-crop {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    max-width: 100%;
+    overflow: auto;
+}
+
+.pdf-giorno-crop canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
 /* =========================================================
    LA PARROCCHIA
    ========================================================= */

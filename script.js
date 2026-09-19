@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================
-    // 2. VISUALIZZA EVIDENZIAZIONE NEL PDF
+    // 2. MOSTRA SOLO IL RIQUADRO DEL GIORNO
     // =====================================
 
     const contenitorePDF = document.getElementById("pdf-container");
@@ -60,113 +60,116 @@ document.addEventListener("DOMContentLoaded", function () {
     // Carica il PDF
     pdfjsLib.getDocument(url).promise.then(function (pdf) {
 
-        for (
-            let numeroPagina = 1;
-            numeroPagina <= pdf.numPages;
-            numeroPagina++
-        ) {
+        // Leggiamo solo la prima pagina (foglietto settimanale)
+        pdf.getPage(1).then(function (pagina) {
 
-            pdf.getPage(numeroPagina).then(function (pagina) {
+            const scala = 1.5;
 
-                const scala = 1.5;
+            const viewport = pagina.getViewport({
+                scale: scala
+            });
 
-                const viewport = pagina.getViewport({
-                    scale: scala
+            // Legge il testo del PDF per trovare il giorno
+            pagina.getTextContent().then(function (contenuto) {
+
+                let minX = null, minY = null, maxX = null, maxY = null;
+                let trovatoGiorno = false;
+
+                // Prima passa: trovare il giorno e calcolare il bounding box
+                contenuto.items.forEach(function (elemento) {
+
+                    const testo = elemento.str.trim();
+
+                    // Cerca il nome del giorno attuale
+                    if (
+                        testo.toLowerCase().includes(
+                            nomeGiorno.toLowerCase()
+                        )
+                    ) {
+
+                        trovatoGiorno = true;
+
+                        const trasformazione =
+                            pdfjsLib.Util.transform(
+                                viewport.transform,
+                                elemento.transform
+                            );
+
+                        const x = trasformazione[4];
+                        const y = trasformazione[5];
+                        const larghezza =
+                            Math.abs(trasformazione[0]);
+                        const altezza =
+                            Math.abs(trasformazione[3]);
+
+                        if (minX === null || x < minX) minX = x;
+                        if (minY === null || (y - altezza) < minY)
+                            minY = y - altezza;
+                        if (maxX === null || (x + larghezza) > maxX)
+                            maxX = x + larghezza;
+                        if (maxY === null || y > maxY)
+                            maxY = y;
+                    }
+
                 });
 
-                const wrapper = document.createElement("div");
+                if (!trovatoGiorno) {
+                    contenitorePDF.innerHTML =
+                        "<p>Giorno non trovato nel foglietto.</p>";
+                    return;
+                }
 
-                wrapper.className = "pdf-pagina";
+                // Aggiunge margine al riquadro
+                const margine = 15;
+                const recX = Math.max(0, minX - margine);
+                const recY = Math.max(0, minY - margine);
+                const recWidth = (maxX - minX) + (margine * 2);
+                const recHeight = (maxY - minY) + (margine * 2);
 
-                wrapper.style.position = "relative";
-                wrapper.style.width = viewport.width + "px";
-                wrapper.style.height = viewport.height + "px";
-
-
+                // Render della pagina intera
                 const canvas = document.createElement("canvas");
-
                 canvas.width = viewport.width;
                 canvas.height = viewport.height;
 
-                wrapper.appendChild(canvas);
-
-                contenitorePDF.appendChild(wrapper);
-
-
                 const contesto = canvas.getContext("2d");
 
-
-                // Visualizza la pagina PDF
                 pagina.render({
                     canvasContext: contesto,
                     viewport: viewport
-                });
+                }).promise.then(function () {
 
+                    // Crea un nuovo canvas per il crop
+                    const cropCanvas = document.createElement("canvas");
+                    cropCanvas.width = recWidth;
+                    cropCanvas.height = recHeight;
 
-                // Legge il testo del PDF
-                pagina.getTextContent().then(function (contenuto) {
+                    const cropContesto = cropCanvas.getContext("2d");
 
-                    contenuto.items.forEach(function (elemento) {
+                    // Copia la porzione dal canvas originale
+                    cropContesto.drawImage(
+                        canvas,
+                        recX,
+                        recY,
+                        recWidth,
+                        recHeight,
+                        0,
+                        0,
+                        recWidth,
+                        recHeight
+                    );
 
-                        const testo = elemento.str.trim();
+                    // Mostra il crop nel contenitore
+                    const wrapper = document.createElement("div");
+                    wrapper.className = "pdf-giorno-crop";
+                    wrapper.appendChild(cropCanvas);
 
-
-                        // Cerca il nome del giorno attuale
-                        if (
-                            testo.toLowerCase().includes(
-                                nomeGiorno.toLowerCase()
-                            )
-                        ) {
-
-                            const evidenziazione =
-                                document.createElement("div");
-
-                            evidenziazione.className =
-                                "pdf-giorno-oggi";
-
-
-                            const trasformazione =
-                                pdfjsLib.Util.transform(
-                                    viewport.transform,
-                                    elemento.transform
-                                );
-
-
-                            const x = trasformazione[4];
-                            const y = trasformazione[5];
-
-                            const altezza =
-                                Math.abs(trasformazione[3]);
-
-                            const larghezza =
-                                Math.abs(trasformazione[0]);
-
-
-                            evidenziazione.style.position = "absolute";
-
-                            evidenziazione.style.left = x + "px";
-
-                            evidenziazione.style.top =
-                                (y - altezza) + "px";
-
-                            evidenziazione.style.width =
-                                larghezza + "px";
-
-                            evidenziazione.style.height =
-                                (altezza + 8) + "px";
-
-
-                            wrapper.appendChild(evidenziazione);
-
-                        }
-
-                    });
+                    contenitorePDF.appendChild(wrapper);
 
                 });
 
             });
 
-        }
+        });
 
     }).catch(function (errore) {
 
