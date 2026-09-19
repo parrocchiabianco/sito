@@ -100,14 +100,25 @@ document.addEventListener("DOMContentLoaded", function () {
                         console.log(idx + ": " + r);
                     });
 
-                    // Trova l'ultimo indice della riga con il giorno (per evitare intestazioni)
-                    let indiceGiorno = -1;
-                    righe.forEach(function (riga, idx) {
-                        if (riga.toUpperCase().includes(nomeGiorno.toUpperCase())) {
-                            indiceGiorno = idx;
-                            console.log("Trovato giorno all'indice:", idx, "Riga:", riga);
-                        }
+                    // Trova gli indici di TUTTI i giorni
+                    let indiciGiorni = {};
+                    giorni.forEach(function(giorno) {
+                        indiciGiorni[giorno] = [];
+                        righe.forEach(function(riga, idx) {
+                            if (riga.toUpperCase().includes(giorno.toUpperCase())) {
+                                indiciGiorni[giorno].push(idx);
+                            }
+                        });
                     });
+
+                    console.log("Indici di tutti i giorni:", indiciGiorni);
+
+                    // Trova l'indice del giorno attuale che ha senso (il più grande tra i match)
+                    let indiceGiorno = -1;
+                    if (indiciGiorni[nomeGiorno].length > 0) {
+                        indiceGiorno = indiciGiorni[nomeGiorno][indiciGiorni[nomeGiorno].length - 1];
+                        console.log("✓ Usato l'ultimo match per " + nomeGiorno + " all'indice:", indiceGiorno);
+                    }
 
                     // Se non trovato
                     if (indiceGiorno === -1) {
@@ -118,32 +129,32 @@ document.addEventListener("DOMContentLoaded", function () {
                         return;
                     }
 
-                    console.log("✓✓✓ Indice finale del giorno:", indiceGiorno);
+                    // Trova il prossimo giorno dopo quello attuale
+                    // Ordine giorni: Domenica(0), Lunedì(1), Martedì(2), Mercoledì(3), Giovedì(4), Venerdì(5), Sabato(6)
+                    let giornoSuccessivo = "";
+                    let indiceGiornoSuccessivo = righe.length; // Default: fine documento
 
-                    // Estrai le righe del giorno (dal giorno corrente fino al prossimo giorno)
-                    let contenutoGiorno = [];
-
-                    // Inizia dalla riga del giorno
-                    for (let i = indiceGiorno; i < righe.length; i++) {
-                        const riga = righe[i];
-
-                        // Se trovo un altro giorno della settimana, stop
-                        let trovatoAltroGiorno = false;
-                        giorni.forEach(function (g) {
-                            if (i !== indiceGiorno && riga.toUpperCase().includes(g.toUpperCase())) {
-                                trovatoAltroGiorno = true;
+                    for (let i = indiceGiorno + 1; i < righe.length; i++) {
+                        let trovato = false;
+                        giorni.forEach(function(giorno) {
+                            if (giorno !== nomeGiorno && righe[i].toUpperCase().includes(giorno.toUpperCase())) {
+                                giornoSuccessivo = giorno;
+                                indiceGiornoSuccessivo = i;
+                                trovato = true;
                             }
                         });
-
-                        if (trovatoAltroGiorno) {
-                            console.log("Trovato altro giorno all'indice " + i + ", stop");
-                            break;
-                        }
-
-                        contenutoGiorno.push(riga);
+                        if (trovato) break;
                     }
 
-                    console.log("Contenuto grezzo del giorno:", contenutoGiorno);
+                    console.log("Giorno successivo:", giornoSuccessivo, "all'indice:", indiceGiornoSuccessivo);
+
+                    // Estrai solo il contenuto tra il giorno attuale e il prossimo
+                    let contenutoGiorno = [];
+                    for (let i = indiceGiorno; i < indiceGiornoSuccessivo; i++) {
+                        contenutoGiorno.push(righe[i]);
+                    }
+
+                    console.log("Contenuto grezzo del giorno (prima di pulire):", contenutoGiorno);
 
                     // Funzione per pulire il testo
                     function pulisciTesto(testo) {
