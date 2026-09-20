@@ -1,110 +1,8 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 13 al 20 Settembre 2026",
+  "periodo": "dal 20 al 27 Settembre 2026",
   "telefono": "0964 911 558",
   "giorni": [
-    {
-      "data": "Domenica 13",
-      "ricorrenza": "XXIV Domenica del T.O.",
-      "celebrazioni": [
-        {
-          "ora": "8.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "PAOLA, ANTONIO, DOMENICO",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Lunedì 14",
-      "ricorrenza": "Esaltazione della Santa Croce",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Figliomeni COSIMO",
-          "luogo": "S. FRANCESCO"
-        }
-      ]
-    },
-    {
-      "data": "Martedì 15",
-      "ricorrenza": "Beata Vergine Maria Addolorata",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "CARMELINA, GIUSEPPE, PASQUALE, MARIA",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "20.00",
-          "descrizione": "Consiglio Pastorale Parrocchiale",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 16",
-      "ricorrenza": "Ss. Cornelio e Cipriano",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 17",
-      "ricorrenza": "S. Roberto Bellarmino / S. Ildegarda di Bingen",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Venerdì 18",
-      "ricorrenza": "S. Giuseppe da Copertino",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 19",
-      "ricorrenza": "S. Gennaro",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
     {
       "data": "Domenica 20",
       "ricorrenza": "XXV Domenica del T.O.",
@@ -112,7 +10,7 @@
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": "Def. Fam. SPINELLA, DOMENICO, Zarzaca CARMELA",
+          "intenzioni": "Fam. SPINELLA DOMENICO, Zarzaca CARMELA",
           "luogo": "SANTUARIO"
         },
         {
@@ -124,7 +22,103 @@
         {
           "ora": "18.00",
           "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Lunedì 21",
+      "ricorrenza": "S. Matteo, apostolo ed evangelista",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "In onore di Gesù di Maria",
+          "luogo": "S. FRANCESCO"
+        }
+      ]
+    },
+    {
+      "data": "Martedì 22",
+      "ricorrenza": "S. Silvano",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 23",
+      "ricorrenza": "S. Pio da Pietrelcina",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "PAOLA, VINCENZO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Giovedì 24",
+      "ricorrenza": "S. Pacifico",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
+          "intenzioni": "Pizzinga MARIA-RITA",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Venerdì 25",
+      "ricorrenza": "S. Sergio di Radonez",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di MONTELEONE ANGELA",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 26",
+      "ricorrenza": "Ss. Cosma e Damiano",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
           "intenzioni": "Bartolo FRANCESCO",
+          "luogo": "S. MARINA"
+        }
+      ]
+    },
+    {
+      "data": "Domenica 27",
+      "ricorrenza": "XXVI Domenica del T.O.",
+      "celebrazioni": [
+        {
+          "ora": "8.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "FRANCO, SANTA, LILLA, GUISEPPA",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
           "luogo": "SANTUARIO"
         }
       ]
