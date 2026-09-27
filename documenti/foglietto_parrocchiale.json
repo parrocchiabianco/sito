@@ -1,16 +1,16 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 20 al 27 Settembre 2026",
+  "periodo": "dal 27 Settembre al 4 Ottobre 2026",
   "telefono": "0964 911 558",
   "giorni": [
     {
-      "data": "Domenica 20",
-      "ricorrenza": "XXV Domenica del T.O.",
+      "data": "Domenica 27",
+      "ricorrenza": "XXVI Domenica del T.O.",
       "celebrazioni": [
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": "Fam. SPINELLA DOMENICO, Zarzaca CARMELA",
+          "intenzioni": "FRANCO, SANTA, LILLA, GUISEPPA",
           "luogo": "SANTUARIO"
         },
         {
@@ -22,91 +22,109 @@
         {
           "ora": "18.00",
           "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Lunedì 21",
-      "ricorrenza": "S. Matteo, apostolo ed evangelista",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "In onore di Gesù di Maria",
-          "luogo": "S. FRANCESCO"
-        }
-      ]
-    },
-    {
-      "data": "Martedì 22",
-      "ricorrenza": "S. Silvano",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 23",
-      "ricorrenza": "S. Pio da Pietrelcina",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "PAOLA, VINCENZO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 24",
-      "ricorrenza": "S. Pacifico",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
           "intenzioni": "Pizzinga MARIA-RITA",
           "luogo": "SANTUARIO"
         }
       ]
     },
     {
-      "data": "Venerdì 25",
-      "ricorrenza": "S. Sergio di Radonez",
+      "data": "Lunedì 28",
+      "ricorrenza": "S. Vanceslao / Ss. Lorenzo Ruiz e compagni",
       "celebrazioni": [
         {
           "ora": "18.00",
           "descrizione": "S. Messa",
-          "intenzioni": "TRIGESIMO di MONTELEONE ANGELA",
+          "intenzioni": "1° ANNIVERSARIO di BENTIVOGLIO CARMELA FILOMENA",
           "luogo": "SANTUARIO"
         }
       ]
     },
     {
-      "data": "Sabato 26",
-      "ricorrenza": "Ss. Cosma e Damiano",
+      "data": "Martedì 29",
+      "ricorrenza": "Ss. Michele, Gabriele, e Rafaele, arcangeli",
       "celebrazioni": [
         {
           "ora": "18.00",
           "descrizione": "S. Messa",
-          "intenzioni": "Bartolo FRANCESCO",
-          "luogo": "S. MARINA"
+          "intenzioni": "Caruso GIUSEPPE, Def. Fam. FARCOMENI e MUSCATELLO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "ADORAZIONE EUCARISTICA",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
         }
       ]
     },
     {
-      "data": "Domenica 27",
-      "ricorrenza": "XXVI Domenica del T.O.",
+      "data": "Mercoledì 30",
+      "ricorrenza": "S. Girolamo",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "1° ANNIVERSARIO di PULITANÒ GIULIO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Giovedì 1",
+      "ricorrenza": "S. Teresa di Gesù Bambino",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
+          "intenzioni": "GUILIO, FRANCESCA, AMALIA, PAOLO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Venerdì 2",
+      "ricorrenza": "Ss. Angeli Custodi",
+      "celebrazioni": [
+        {
+          "ora": "7.30",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "1° ANNIVERSARIO di LUCÀ VINCENZO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 3",
+      "ricorrenza": "S. Dionigi",
+      "celebrazioni": [
+        {
+          "ora": "7.30",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "1° ANNIVERSARIO di PIZZATA MARIETTA",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Domenica 4",
+      "ricorrenza": "XXVII Domenica del T.O.",
       "celebrazioni": [
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": "FRANCO, SANTA, LILLA, GUISEPPA",
+          "intenzioni": null,
           "luogo": "SANTUARIO"
         },
         {
