@@ -1,16 +1,16 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 27 Settembre al 4 Ottobre 2026",
+  "periodo": "dal 4 all'11 Ottobre 2026",
   "telefono": "0964 911 558",
   "giorni": [
     {
-      "data": "Domenica 27",
-      "ricorrenza": "XXVI Domenica del T.O.",
+      "data": "Domenica 4",
+      "ricorrenza": "XXVII del T.O.",
       "celebrazioni": [
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": "FRANCO, SANTA, LILLA, GUISEPPA",
+          "intenzioni": "MARIA, ROSA, TERESA",
           "luogo": "SANTUARIO"
         },
         {
@@ -20,124 +20,124 @@
           "luogo": "SANTUARIO"
         },
         {
+          "ora": "12.00",
+          "descrizione": "SUPPLICA Madonna Pompei",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
           "ora": "18.00",
           "descrizione": "S. Messa",
-          "intenzioni": "Pizzinga MARIA-RITA",
+          "intenzioni": null,
           "luogo": "SANTUARIO"
         }
       ]
     },
     {
-      "data": "Lunedì 28",
-      "ricorrenza": "S. Vanceslao / Ss. Lorenzo Ruiz e compagni",
+      "data": "Lunedì 5",
+      "ricorrenza": "S. Maria Faustina Kowalska",
       "celebrazioni": [
         {
           "ora": "18.00",
           "descrizione": "S. Messa",
-          "intenzioni": "1° ANNIVERSARIO di BENTIVOGLIO CARMELA FILOMENA",
+          "intenzioni": "Famiglia MORREALE, MARMINA, RADOLOVIC",
           "luogo": "SANTUARIO"
         }
       ]
     },
     {
-      "data": "Martedì 29",
-      "ricorrenza": "Ss. Michele, Gabriele, e Rafaele, arcangeli",
+      "data": "Martedì 6",
+      "ricorrenza": "S. Bruno",
       "celebrazioni": [
         {
           "ora": "18.00",
           "descrizione": "S. Messa",
-          "intenzioni": "Caruso GIUSEPPE, Def. Fam. FARCOMENI e MUSCATELLO",
+          "intenzioni": "BRUNO, CATERINA, BIAGIO e ROSA",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 7",
+      "ricorrenza": "Beata Vergine Maria del Rosario",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
           "luogo": "SANTUARIO"
         },
         {
           "ora": "21.00",
-          "descrizione": "ADORAZIONE EUCARISTICA",
+          "descrizione": "S. Rosario",
           "intenzioni": null,
           "luogo": "SANTUARIO"
         }
       ]
     },
     {
-      "data": "Mercoledì 30",
-      "ricorrenza": "S. Girolamo",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "1° ANNIVERSARIO di PULITANÒ GIULIO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 1",
-      "ricorrenza": "S. Teresa di Gesù Bambino",
+      "data": "Giovedì 8",
+      "ricorrenza": "S. Ugo",
       "celebrazioni": [
         {
           "ora": "18.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
-          "intenzioni": "GUILIO, FRANCESCA, AMALIA, PAOLO",
-          "luogo": "SANTUARIO"
+          "descrizione": "S. Messa (1° giorno TRIDUO MADONNA del ROSARIO)",
+          "intenzioni": "Gonzares FRANCESCO, CATERINA, ANTONIO, Cufari ROCCO, ANTONIO, CATERINA",
+          "luogo": "S. MARINA"
         }
       ]
     },
     {
-      "data": "Venerdì 2",
-      "ricorrenza": "Ss. Angeli Custodi",
+      "data": "Venerdì 9",
+      "ricorrenza": "Ss. Dionigi e Compagni / S. Giovanni Leonardi",
       "celebrazioni": [
         {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
+          "ora": "18.00",
+          "descrizione": "S. Messa (2° giorno TRIDUO MADONNA del ROSARIO)",
           "intenzioni": null,
+          "luogo": "S. MARINA"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 10",
+      "ricorrenza": "S. Daniele Comboni",
+      "celebrazioni": [
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di MOROSANU VASILE",
           "luogo": "SANTUARIO"
         },
         {
           "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "1° ANNIVERSARIO di LUCÀ VINCENZO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 3",
-      "ricorrenza": "S. Dionigi",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
+          "descrizione": "S. Messa (3° giorno TRIDUO MADONNA del ROSARIO)",
           "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "1° ANNIVERSARIO di PIZZATA MARIETTA",
-          "luogo": "SANTUARIO"
+          "luogo": "S. MARINA"
         }
       ]
     },
     {
-      "data": "Domenica 4",
-      "ricorrenza": "XXVII Domenica del T.O.",
+      "data": "Domenica 11",
+      "ricorrenza": "XXVIII del T.O.",
       "celebrazioni": [
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": null,
+          "intenzioni": "VINCENSO, TERESA, VINCENZO, ROSA",
           "luogo": "SANTUARIO"
         },
         {
           "ora": "10.00",
-          "descrizione": "S. Messa",
+          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
           "intenzioni": null,
-          "luogo": "SANTUARIO"
+          "luogo": "S. MARINA"
         },
         {
           "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
+          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
+          "intenzioni": "Sicari ROSA",
+          "luogo": "S. MARINA"
         }
       ]
     }
