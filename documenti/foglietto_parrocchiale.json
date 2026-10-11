@@ -1,32 +1,68 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 4 all'11 Ottobre 2026",
+  "periodo": "dal 11 al 18 Ottobre 2026",
   "telefono": "0964 911 558",
   "giorni": [
     {
-      "data": "Domenica 4",
-      "ricorrenza": "XXVII del T.O.",
+      "data": "Domenica 11",
+      "ricorrenza": "XXVIII del T.O.",
       "celebrazioni": [
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": "MARIA, ROSA, TERESA",
+          "intenzioni": "VINCENZO, TERESA, VINCENZO, ROSA",
           "luogo": "SANTUARIO"
         },
         {
           "ora": "10.00",
+          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
+          "intenzioni": null,
+          "luogo": "S. MARINA"
+        },
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
+          "intenzioni": "Sicari ROSA",
+          "luogo": "S. MARINA"
+        }
+      ]
+    },
+    {
+      "data": "Lunedì 12",
+      "ricorrenza": "S. Carlo Acutis",
+      "celebrazioni": [
+        {
+          "ora": "7.30",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "S. FRANCESCO"
+        }
+      ]
+    },
+    {
+      "data": "Martedì 13",
+      "ricorrenza": "S. Romolo",
+      "celebrazioni": [
+        {
+          "ora": "7.30",
           "descrizione": "S. Messa",
           "intenzioni": null,
           "luogo": "SANTUARIO"
         },
         {
-          "ora": "12.00",
-          "descrizione": "SUPPLICA Madonna Pompei",
-          "intenzioni": null,
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di GIUSEPPE LONGO",
           "luogo": "SANTUARIO"
-        },
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 14",
+      "ricorrenza": "S. Calisto I",
+      "celebrazioni": [
         {
-          "ora": "18.00",
+          "ora": "7.30",
           "descrizione": "S. Messa",
           "intenzioni": null,
           "luogo": "SANTUARIO"
@@ -34,32 +70,20 @@
       ]
     },
     {
-      "data": "Lunedì 5",
-      "ricorrenza": "S. Maria Faustina Kowalska",
+      "data": "Giovedì 15",
+      "ricorrenza": "S. Teresa di Gesù",
       "celebrazioni": [
         {
           "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Famiglia MORREALE, MARMINA, RADOLOVIC",
+          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
+          "intenzioni": "Mazza ANTONIO",
           "luogo": "SANTUARIO"
         }
       ]
     },
     {
-      "data": "Martedì 6",
-      "ricorrenza": "S. Bruno",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "BRUNO, CATERINA, BIAGIO e ROSA",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 7",
-      "ricorrenza": "Beata Vergine Maria del Rosario",
+      "data": "Venerdì 16",
+      "ricorrenza": "S. Edvige / S. Margherita Maria Alacoque",
       "celebrazioni": [
         {
           "ora": "18.00",
@@ -76,68 +100,50 @@
       ]
     },
     {
-      "data": "Giovedì 8",
-      "ricorrenza": "S. Ugo",
+      "data": "Sabato 17",
+      "ricorrenza": "S. Ignazio di Antiochia",
       "celebrazioni": [
         {
-          "ora": "18.00",
-          "descrizione": "S. Messa (1° giorno TRIDUO MADONNA del ROSARIO)",
-          "intenzioni": "Gonzares FRANCESCO, CATERINA, ANTONIO, Cufari ROCCO, ANTONIO, CATERINA",
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
-    {
-      "data": "Venerdì 9",
-      "ricorrenza": "Ss. Dionigi e Compagni / S. Giovanni Leonardi",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa (2° giorno TRIDUO MADONNA del ROSARIO)",
+          "ora": "15.00",
+          "descrizione": "Inizio Catechesimo",
           "intenzioni": null,
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 10",
-      "ricorrenza": "S. Daniele Comboni",
-      "celebrazioni": [
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "TRIGESIMO di MOROSANU VASILE",
-          "luogo": "SANTUARIO"
+          "luogo": "ORATORIO"
         },
         {
           "ora": "18.00",
-          "descrizione": "S. Messa (3° giorno TRIDUO MADONNA del ROSARIO)",
-          "intenzioni": null,
+          "descrizione": "S. Messa",
+          "intenzioni": "Trezza ROSA",
           "luogo": "S. MARINA"
         }
       ]
     },
     {
-      "data": "Domenica 11",
-      "ricorrenza": "XXVIII del T.O.",
+      "data": "Domenica 18",
+      "ricorrenza": "XXIX del T.O.",
       "celebrazioni": [
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": "VINCENSO, TERESA, VINCENZO, ROSA",
+          "intenzioni": "Def. Fam. MOLLUSO e BEVILACQUA",
           "luogo": "SANTUARIO"
         },
         {
           "ora": "10.00",
-          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
+          "descrizione": "S. Messa",
           "intenzioni": null,
-          "luogo": "S. MARINA"
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.15",
+          "descrizione": "S. Messa (Per Catechesi)",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
         },
         {
           "ora": "18.00",
-          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
-          "intenzioni": "Sicari ROSA",
-          "luogo": "S. MARINA"
+          "descrizione": "S. Messa",
+          "intenzioni": "GIANNI e ENZO FONTANA",
+          "luogo": "SANTUARIO"
         }
       ]
     }
