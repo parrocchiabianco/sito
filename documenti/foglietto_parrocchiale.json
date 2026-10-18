@@ -1,130 +1,16 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 11 al 18 Ottobre 2026",
-  "telefono": "0964 911 558",
+  "periodo": "dal 25 Ottobre al 1 Novembre 2025",
+  "telefono": null,
   "giorni": [
     {
-      "data": "Domenica 11",
-      "ricorrenza": "XXVIII del T.O.",
+      "data": "Domenica 25",
+      "ricorrenza": "XXX Domenica del T.O.",
       "celebrazioni": [
         {
           "ora": "8.00",
           "descrizione": "S. Messa",
-          "intenzioni": "VINCENZO, TERESA, VINCENZO, ROSA",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
-          "intenzioni": null,
-          "luogo": "S. MARINA"
-        },
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
-          "intenzioni": "Sicari ROSA",
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
-    {
-      "data": "Lunedì 12",
-      "ricorrenza": "S. Carlo Acutis",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "S. FRANCESCO"
-        }
-      ]
-    },
-    {
-      "data": "Martedì 13",
-      "ricorrenza": "S. Romolo",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "TRIGESIMO di GIUSEPPE LONGO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 14",
-      "ricorrenza": "S. Calisto I",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 15",
-      "ricorrenza": "S. Teresa di Gesù",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
-          "intenzioni": "Mazza ANTONIO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Venerdì 16",
-      "ricorrenza": "S. Edvige / S. Margherita Maria Alacoque",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "21.00",
-          "descrizione": "S. Rosario",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 17",
-      "ricorrenza": "S. Ignazio di Antiochia",
-      "celebrazioni": [
-        {
-          "ora": "15.00",
-          "descrizione": "Inizio Catechesimo",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        },
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Trezza ROSA",
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
-    {
-      "data": "Domenica 18",
-      "ricorrenza": "XXIX del T.O.",
-      "celebrazioni": [
-        {
-          "ora": "8.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Def. Fam. MOLLUSO e BEVILACQUA",
+          "intenzioni": "Spinella CONCETTA, Capponi REMO",
           "luogo": "SANTUARIO"
         },
         {
@@ -140,9 +26,129 @@
           "luogo": "ORATORIO"
         },
         {
-          "ora": "18.00",
+          "ora": "17.00",
           "descrizione": "S. Messa",
-          "intenzioni": "GIANNI e ENZO FONTANA",
+          "intenzioni": "TRIGESIMO di ROBERTO GATTELLARO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Lunedì 26",
+      "ricorrenza": "S. Luciano",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Alessi ROCCO",
+          "luogo": "S. FRANCESCO"
+        },
+        {
+          "ora": "20.00",
+          "descrizione": "Consiglio Pastorale Parrocchiale",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        }
+      ]
+    },
+    {
+      "data": "Martedì 27",
+      "ricorrenza": "S. Evaristo",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 28",
+      "ricorrenza": "S. Simone e Giuda, apostoli",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Cavaleri ROSA e GIOVANNI",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "Santo Rosario",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Giovedì 29",
+      "ricorrenza": "S. Onorato",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
+          "intenzioni": "Canturi ROCCO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Venerdì 30",
+      "ricorrenza": "S. Germano",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "SORELLE Mesiti e VINCENZO Lascala",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 31",
+      "ricorrenza": "S. Quintino",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "GIOVANNI, ERNESTO Rossi",
+          "luogo": "S. MARINA"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "Veglia di Tutti i Santi con Adorazione Eucaristica",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Domenica 1",
+      "ricorrenza": "XXXI Domenica del T.O. - TUTTI I SANTI",
+      "celebrazioni": [
+        {
+          "ora": "8.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "MARIANTONIA e FILIPPO Battaglia",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.15",
+          "descrizione": "S. Messa (Per Catechesi)",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "SANTINO, FILIPPO",
           "luogo": "SANTUARIO"
         }
       ]
