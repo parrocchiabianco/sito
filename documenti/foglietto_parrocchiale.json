@@ -1,122 +1,8 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 11 al 18 Ottobre 2026",
-  "telefono": "0964 911 558",
+  "periodo": "dal 18 al 25 Ottobre 2026",
+  "telefono": null,
   "giorni": [
-    {
-      "data": "Domenica 11",
-      "ricorrenza": "XXVIII del T.O.",
-      "celebrazioni": [
-        {
-          "ora": "8.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "VINCENZO, TERESA, VINCENZO, ROSA",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
-          "intenzioni": null,
-          "luogo": "S. MARINA"
-        },
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa (segue PROCESSIONE MADONNA del ROSARIO)",
-          "intenzioni": "Sicari ROSA",
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
-    {
-      "data": "Lunedì 12",
-      "ricorrenza": "S. Carlo Acutis",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "S. FRANCESCO"
-        }
-      ]
-    },
-    {
-      "data": "Martedì 13",
-      "ricorrenza": "S. Romolo",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "TRIGESIMO di GIUSEPPE LONGO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 14",
-      "ricorrenza": "S. Calisto I",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 15",
-      "ricorrenza": "S. Teresa di Gesù",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
-          "intenzioni": "Mazza ANTONIO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Venerdì 16",
-      "ricorrenza": "S. Edvige / S. Margherita Maria Alacoque",
-      "celebrazioni": [
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "21.00",
-          "descrizione": "S. Rosario",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 17",
-      "ricorrenza": "S. Ignazio di Antiochia",
-      "celebrazioni": [
-        {
-          "ora": "15.00",
-          "descrizione": "Inizio Catechesimo",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        },
-        {
-          "ora": "18.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Trezza ROSA",
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
     {
       "data": "Domenica 18",
       "ricorrenza": "XXIX del T.O.",
@@ -143,6 +29,138 @@
           "ora": "18.00",
           "descrizione": "S. Messa",
           "intenzioni": "GIANNI e ENZO FONTANA",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Lunedì 19",
+      "ricorrenza": "Ss. Giovanni de Brébeuf e Isacco Jogues e Compagni / S. Paolo della Croce",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "FRANCO Nirta",
+          "luogo": "S. FRANCESCO"
+        }
+      ]
+    },
+    {
+      "data": "Martedì 20",
+      "ricorrenza": "S. Maria Bertilla Boscardin",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di FULCO COSIMO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 21",
+      "ricorrenza": "S. Giuseppe Puglisi",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di FILOMENA GATTELLARO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "Santo Rosario",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Giovedì 22",
+      "ricorrenza": "S. Giovanni Paolo II",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "S. MARINA"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "ADORAZIONE EUCARISTICA",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Venerdì 23",
+      "ricorrenza": "S. Giovanni da Capestrano",
+      "celebrazioni": [
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di MOROSINI FRANCESCO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 24",
+      "ricorrenza": "S. Antonio Maria Claret",
+      "celebrazioni": [
+        {
+          "ora": "15.00",
+          "descrizione": "Catechesi di iniziazione Cristiana per ragazzi e ragazze",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "16.00",
+          "descrizione": "Inizio Attività Oratorio",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "18.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di DE LORENZO GIOVANNA",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Domenica 25",
+      "ricorrenza": "XXX del T.O.",
+      "celebrazioni": [
+        {
+          "ora": "8.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Spinella CONCETTA, Capponi REMO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.15",
+          "descrizione": "S. Messa (Per Catechesi)",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "11.15",
+          "descrizione": "Attività di Oratorio",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di ROBERTO GATTELLARO",
           "luogo": "SANTUARIO"
         }
       ]
