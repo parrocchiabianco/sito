@@ -1,128 +1,8 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 25 Ottobre al 1 Novembre 2025",
-  "telefono": null,
+  "periodo": "dal 1 al 8 Novembre 2026",
+  "telefono": "0964 911 558",
   "giorni": [
-    {
-      "data": "Domenica 25",
-      "ricorrenza": "XXX Domenica del T.O.",
-      "celebrazioni": [
-        {
-          "ora": "8.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Spinella CONCETTA, Capponi REMO",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.15",
-          "descrizione": "S. Messa (Per Catechesi)",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "TRIGESIMO di ROBERTO GATTELLARO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Lunedì 26",
-      "ricorrenza": "S. Luciano",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Alessi ROCCO",
-          "luogo": "S. FRANCESCO"
-        },
-        {
-          "ora": "20.00",
-          "descrizione": "Consiglio Pastorale Parrocchiale",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        }
-      ]
-    },
-    {
-      "data": "Martedì 27",
-      "ricorrenza": "S. Evaristo",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "TRIGESIMO di FULCO COSIMO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 28",
-      "ricorrenza": "S. Simone e Giuda, apostoli",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Cavaleri ROSA e GIOVANNI",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "21.00",
-          "descrizione": "Santo Rosario",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 29",
-      "ricorrenza": "S. Onorato",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
-          "intenzioni": "Canturi ROCCO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Venerdì 30",
-      "ricorrenza": "S. Germano",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "SORELLE Mesiti e VINCENZO Lascala",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 31",
-      "ricorrenza": "S. Quintino",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "GIOVANNI, ERNESTO Rossi",
-          "luogo": "S. MARINA"
-        },
-        {
-          "ora": "21.00",
-          "descrizione": "Veglia di Tutti i Santi con Adorazione Eucaristica",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
     {
       "data": "Domenica 1",
       "ricorrenza": "XXXI Domenica del T.O. - TUTTI I SANTI",
@@ -148,7 +28,133 @@
         {
           "ora": "17.00",
           "descrizione": "S. Messa",
-          "intenzioni": "SANTINO, FILIPPO",
+          "intenzioni": "SANTINO, FILIPPO, MICHELINA, RENATA, ERASIMO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Lunedì 2",
+      "ricorrenza": "Commemorazione di Tutti i Fedeli Defunti",
+      "celebrazioni": [
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "CIMITERO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa Per DEFUNTI della Parrocchia del 2025–2026",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Martedì 3",
+      "ricorrenza": "S. Martino de Porres",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "ERNESTO, ANGELA e ALFREDO Ursino",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 4",
+      "ricorrenza": "S. Carlo Borromeo",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TERESA, GIUSEPPE Sansotta, ROSA, SAVERIO Chianese",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "Santo Rosario",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Giovedì 5",
+      "ricorrenza": "S. Donnino",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
+          "intenzioni": "Scundi ROSA, Serafino BIAGIO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Venerdì 6",
+      "ricorrenza": "S. Leonardo",
+      "celebrazioni": [
+        {
+          "ora": "7.30",
+          "descrizione": "S. Messa in onore del Sacro Cuore di Gesù",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "MOMMO, ARISTIDE e CARMINE",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 7",
+      "ricorrenza": "S. Fiorenzo",
+      "celebrazioni": [
+        {
+          "ora": "7.30",
+          "descrizione": "S. Messa in onore del Cuore Immacolato di Maria",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "ANTONIA, BRONO, FRANCO, GIANLUCA, GIUSEPPE, FILIPPO",
+          "luogo": "S. MARINA"
+        }
+      ]
+    },
+    {
+      "data": "Domenica 8",
+      "ricorrenza": "XXXII Domenica del T.O.",
+      "celebrazioni": [
+        {
+          "ora": "8.00",
+          "descrizione": "S. Messa (accompagniamo la nostra PATRONA all'incontro della comunità di PARDESCA)",
+          "intenzioni": "Todarello TACERINA",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.15",
+          "descrizione": "S. Messa (Per Catechesi)",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa Per ringraziamento per San Carlo Acutis",
+          "intenzioni": null,
           "luogo": "SANTUARIO"
         }
       ]
