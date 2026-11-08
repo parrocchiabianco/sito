@@ -1,134 +1,8 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 1 al 8 Novembre 2026",
+  "periodo": "dal 8 al 15 Novembre 2026",
   "telefono": "0964 911 558",
   "giorni": [
-    {
-      "data": "Domenica 1",
-      "ricorrenza": "XXXI Domenica del T.O. - TUTTI I SANTI",
-      "celebrazioni": [
-        {
-          "ora": "8.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "MARIANTONIA e FILIPPO Battaglia",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.15",
-          "descrizione": "S. Messa (Per Catechesi)",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "SANTINO, FILIPPO, MICHELINA, RENATA, ERASIMO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Lunedì 2",
-      "ricorrenza": "Commemorazione di Tutti i Fedeli Defunti",
-      "celebrazioni": [
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "CIMITERO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa Per DEFUNTI della Parrocchia del 2025–2026",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Martedì 3",
-      "ricorrenza": "S. Martino de Porres",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "ERNESTO, ANGELA e ALFREDO Ursino",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 4",
-      "ricorrenza": "S. Carlo Borromeo",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "TERESA, GIUSEPPE Sansotta, ROSA, SAVERIO Chianese",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "21.00",
-          "descrizione": "Santo Rosario",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 5",
-      "ricorrenza": "S. Donnino",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
-          "intenzioni": "Scundi ROSA, Serafino BIAGIO",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Venerdì 6",
-      "ricorrenza": "S. Leonardo",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa in onore del Sacro Cuore di Gesù",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "MOMMO, ARISTIDE e CARMINE",
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 7",
-      "ricorrenza": "S. Fiorenzo",
-      "celebrazioni": [
-        {
-          "ora": "7.30",
-          "descrizione": "S. Messa in onore del Cuore Immacolato di Maria",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "ANTONIA, BRONO, FRANCO, GIANLUCA, GIUSEPPE, FILIPPO",
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
     {
       "data": "Domenica 8",
       "ricorrenza": "XXXII Domenica del T.O.",
@@ -136,7 +10,7 @@
         {
           "ora": "8.00",
           "descrizione": "S. Messa (accompagniamo la nostra PATRONA all'incontro della comunità di PARDESCA)",
-          "intenzioni": "Todarello TACERINA",
+          "intenzioni": "Todarello CATERINA",
           "luogo": "SANTUARIO"
         },
         {
@@ -158,6 +32,133 @@
           "luogo": "SANTUARIO"
         }
       ]
+    },
+    {
+      "data": "Lunedì 9",
+      "ricorrenza": "Dedicazione della Basilica Lateranense",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "CARMELINA, GIUSEPPE, MARIA, PASQUALE, Balzano FRANCESCA",
+          "luogo": "S. FRANCESCO"
+        }
+      ]
+    },
+    {
+      "data": "Martedì 10",
+      "ricorrenza": "S. Leone Magno",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "1° ANNIVERSARIO di SICILIANO VINCENZO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "17.45",
+          "descrizione": "Lectio Divina",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 11",
+      "ricorrenza": "S. Martino di Tours",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "1° ANNIVERSARIO di SICARI ROSA",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "19.00",
+          "descrizione": "Lectio Divina",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        }
+      ]
+    },
+    {
+      "data": "Giovedì 12",
+      "ricorrenza": "S. Giosafat",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
+          "intenzioni": "FILIPPO e PRASSEDE, Morabito PAOLO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "Adorazione Eucaristica",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Venerdì 13",
+      "ricorrenza": "S. Eugenio",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa (In onore del Sacro Cuore di Gesù e Maria)",
+          "intenzioni": "PAOLA, ANTONIO, DOMENICO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "S. Rosario",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 14",
+      "ricorrenza": "S. Teódoto",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Def. Fam. GARREFFA e BARLETTA",
+          "luogo": "S. MARINA"
+        }
+      ]
+    },
+    {
+      "data": "Domenica 15",
+      "ricorrenza": "XXXIII Domenica del T.O.",
+      "celebrazioni": [
+        {
+          "ora": "8.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Zara ROLANDO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.15",
+          "descrizione": "S. Messa (Per Catechesi)",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "TRIGESIMO di PELLE MARIA",
+          "luogo": "SANTUARIO"
+        }
+      ]
     }
-  ]
+  ],
+  "note": "15 Novembre, Giornata mondiale dei Poveri: raccolta viveri prima e dopo le Santa Messa e nel pomeriggio in Oratorio"
 }
