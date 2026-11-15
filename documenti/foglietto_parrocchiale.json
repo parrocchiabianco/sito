@@ -1,137 +1,11 @@
 {
   "parrocchia": "Parrocchia Tutti i Santi - Bianco",
-  "periodo": "dal 8 al 15 Novembre 2026",
+  "periodo": "dal 15 al 22 Novembre 2026",
   "telefono": "0964 911 558",
   "giorni": [
     {
-      "data": "Domenica 8",
-      "ricorrenza": "XXXII Domenica del T.O.",
-      "celebrazioni": [
-        {
-          "ora": "8.00",
-          "descrizione": "S. Messa (accompagniamo la nostra PATRONA all'incontro della comunità di PARDESCA)",
-          "intenzioni": "Todarello CATERINA",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.00",
-          "descrizione": "S. Messa",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "10.15",
-          "descrizione": "S. Messa (Per Catechesi)",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        },
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa Per ringraziamento per San Carlo Acutis",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Lunedì 9",
-      "ricorrenza": "Dedicazione della Basilica Lateranense",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "CARMELINA, GIUSEPPE, MARIA, PASQUALE, Balzano FRANCESCA",
-          "luogo": "S. FRANCESCO"
-        }
-      ]
-    },
-    {
-      "data": "Martedì 10",
-      "ricorrenza": "S. Leone Magno",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "1° ANNIVERSARIO di SICILIANO VINCENZO",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "17.45",
-          "descrizione": "Lectio Divina",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Mercoledì 11",
-      "ricorrenza": "S. Martino di Tours",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "1° ANNIVERSARIO di SICARI ROSA",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "19.00",
-          "descrizione": "Lectio Divina",
-          "intenzioni": null,
-          "luogo": "ORATORIO"
-        }
-      ]
-    },
-    {
-      "data": "Giovedì 12",
-      "ricorrenza": "S. Giosafat",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
-          "intenzioni": "FILIPPO e PRASSEDE, Morabito PAOLO",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "21.00",
-          "descrizione": "Adorazione Eucaristica",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Venerdì 13",
-      "ricorrenza": "S. Eugenio",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa (In onore del Sacro Cuore di Gesù e Maria)",
-          "intenzioni": "PAOLA, ANTONIO, DOMENICO",
-          "luogo": "SANTUARIO"
-        },
-        {
-          "ora": "21.00",
-          "descrizione": "S. Rosario",
-          "intenzioni": null,
-          "luogo": "SANTUARIO"
-        }
-      ]
-    },
-    {
-      "data": "Sabato 14",
-      "ricorrenza": "S. Teódoto",
-      "celebrazioni": [
-        {
-          "ora": "17.00",
-          "descrizione": "S. Messa",
-          "intenzioni": "Def. Fam. GARREFFA e BARLETTA",
-          "luogo": "S. MARINA"
-        }
-      ]
-    },
-    {
       "data": "Domenica 15",
-      "ricorrenza": "XXXIII Domenica del T.O.",
+      "ricorrenza": "XXXIII Domenica del T.O. - Giornata del Povero",
       "celebrazioni": [
         {
           "ora": "8.00",
@@ -158,7 +32,115 @@
           "luogo": "SANTUARIO"
         }
       ]
+    },
+    {
+      "data": "Lunedì 16",
+      "ricorrenza": "S. Margherita di Scozia / S. Gertrude",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Marafioti ANTONIO, Carlino GIOVANNI e LUIGI",
+          "luogo": "S. FRANCESCO"
+        }
+      ]
+    },
+    {
+      "data": "Martedì 17",
+      "ricorrenza": "S. Elisabetta di Ungheria",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "De Pasquale ANNA, Caruso GIUSEPPE, MARIA e Farcomeni ANNUNZIATA",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Mercoledì 18",
+      "ricorrenza": "Dedicazione delle basiliche dei Santi Pietro e Paolo",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "FRANCO Nirta",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "21.00",
+          "descrizione": "S. Rosario",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Giovedì 19",
+      "ricorrenza": "S. Matilde",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa (Segue ADORAZIONE EUCARISTICA)",
+          "intenzioni": "FRANCESCA e BRUNO",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Venerdì 20",
+      "ricorrenza": "S. Ottavio",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Gullace GIUSEPPE",
+          "luogo": "SANTUARIO"
+        }
+      ]
+    },
+    {
+      "data": "Sabato 21",
+      "ricorrenza": "Presentazione della beata Vergine Maria",
+      "celebrazioni": [
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa (In onore del Sacro Cuore di Gesù e Maria)",
+          "intenzioni": null,
+          "luogo": "S. MARINA"
+        }
+      ]
+    },
+    {
+      "data": "Domenica 22",
+      "ricorrenza": "XXXIV del T.O. - Nostro Signore Gesù Cristo Re dell'Universo",
+      "celebrazioni": [
+        {
+          "ora": "8.00",
+          "descrizione": "S. Messa",
+          "intenzioni": "Spinella CONCETTA e Caponni REMO",
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.00",
+          "descrizione": "S. Messa",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        },
+        {
+          "ora": "10.15",
+          "descrizione": "S. Messa (Per Catechesi)",
+          "intenzioni": null,
+          "luogo": "ORATORIO"
+        },
+        {
+          "ora": "17.00",
+          "descrizione": "S. Messa (Visita del Vescovo)",
+          "intenzioni": null,
+          "luogo": "SANTUARIO"
+        }
+      ]
     }
   ],
-  "note": "15 Novembre, Giornata mondiale dei Poveri: raccolta viveri prima e dopo le Santa Messa e nel pomeriggio in Oratorio"
+  "note": "15 Novembre, Giornata mondiale dei Poveri: raccolta viveri prima e dopo le Santa Messe e nel pomeriggio in Oratorio"
 }
